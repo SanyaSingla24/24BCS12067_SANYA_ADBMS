@@ -1,0 +1,21 @@
+Q1
+ SELECT *
+ FROM Arts
+ UNION
+ SELECT *
+ FROM Science;
+
+Q2
+SELECT emp_name FROM Employee
+UNION ALL
+SELECT emp_name FROM pt_employee;
+
+Q3
+SELECT f_name FROM fruit
+INTERSECT
+SELECT inv_name FROM inventory;
+
+Q4
+SELECT f_name FROM fruit
+EXCEPT
+SELECT inv_name FROM inventory;
